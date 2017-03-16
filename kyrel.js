@@ -29,7 +29,24 @@ function main(n) {
   ////                          ////
   //////////////////////////////////
 
+var colorMove = function(){
+  erase();
+  moveRight();
+  moveRight();
+  moveRight();
+  moveRight();
+}
 
+if (onBlue() ) {
+  colorMove();
+  useBlue();
+  draw();
+} else if (onGreen()) {
+  colorMove();
+  useGreen();
+  draw();
+} else {
+}
 
   //////////////////////////////////
   ////                          ////
